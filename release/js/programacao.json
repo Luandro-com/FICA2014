@@ -1,0 +1,308 @@
+[
+     {
+        "pic": "banhorio",
+        "tipo": "V",
+        "nome": "Banho de Rio",
+        "autor": "Rio Pretinho",
+        "link": "",
+        "desc": ""
+    },{
+        "pic": "cozinha",
+        "tipo": "V",
+        "nome": "Vivência da cozinha comunitária",
+        "autor": "todos nós",
+        "link": "",
+        "desc": ""
+    },{
+        "pic": "sauna",
+        "tipo": "V",
+        "nome": "Vivência de Sauna a beira rio",
+        "autor": "todos nós",
+        "link": "",
+        "desc": ""
+    },{
+        "pic": "romanofogo",
+        "tipo": "V",
+        "nome": "Fogueira",
+        "autor": "todos nós",
+        "desc": ""
+    },{
+        "pic": "tribo",
+        "tipo": "M",
+        "nome": "Apresentação musical",
+        "autor": "Tribo do Sol",
+        "link": "https://www.facebook.com/tribodosolnoface",
+        "desc": "A Tribo do Sol foi canalizada por Pedro Ivo, a partir de vivências e experiências de envolvimento com comunidades alternativas desde a década de 80. Por inspiração do Criador, a vontade de realizar um trabalho difundindo mensagens de paz, amor e conscientização, compartilhada por outros músicos que se juntaram à banda, pôde se concretizar na formação da Tribo do Sol."
+    },{
+        "pic":"fabricioahau",
+        "tipo":"M",
+        "nome":"Apresentação Musical",
+        "autor":"Fabrício Ahau",
+        "link":"http://www.youtube.com/watch?v=PVtl8zZZ85Q",
+        "desc":" Essa Música é um reflexo do que buscamos. Por isso a cantamos com força e sutileza. É um rezo, uma intenção, uma louvação ao Caminho do Bem. Salve toda a Inspiração usada pro Bem! Salve a Música! Salve a Flor da Vida!"
+    },{
+        "pic":"nanam",
+        "tipo":"M",
+        "nome":"Apresentação Musical",
+        "autor":"Nanan",
+        "link":"https://soundcloud.com/nananmusic-1/nanan-casa-da-floresta",
+        "desc":"Nanan traz seu Aloha cheio de gratidão para os palcos do FICA em uma apresentação violão e voz, divulgando seu trabalho autoral mais recente e as canções do álbum Essência: Perfume da Vivência (2013). O músico paranaense, com influências da mpb, rock, reggae e soul, promete para o FICA outros temas de suas andanças pelo Brasil, Hawai'i e Cuba..."
+    },{
+        "pic":"monkey",
+        "tipo":"M",
+        "nome":"Apresentação musical",
+        "autor":"Monkey Heads Project",
+        "link":"https://myspace.com/monkeyheadsproject",
+        "desc":"Projeto de musica instrumental, psychodelica que vai desde o dub ao psy trance trazendo elementos do rock psychodelico, reggae, trance e musica tribal e étnica de todo o mundo. Todos os instrumentos tocados ao vivo."
+    },{
+        "pic": "taichi",
+        "tipo": "V",
+        "nome": "Vivência de Tai Chi Chuan",
+        "autor": "Alex Xavier",
+        "link": "https://www.facebook.com/alex.xavier.771",
+        "desc": "Tai Chi Chuan, a milenar arte oriental que imita os movimentos os animais e os fluxos da natureza."
+    },{
+        "pic": "galatica",
+        "tipo": "O",
+        "nome": "O Novo Raio, Sincronização galáctica do novo tempo",
+        "autor": "Ana Gardênia Brito",
+        "link": " ",
+        "desc": "Para entrar no tempo natural basta seguir o Sincronário das 13 luas e seus ciclos. O Sincronário não é uma religião, mas uma forma cultural que abrange qualquer e todas as práticas espiritualistas, devocionais, doutrinárias de disciplina e ética. É também uma rota segura de evolução que pode ser utilizada por todos, independente da religião. Qualquer pessoa pode usar o sincronário e seguir sua prática religiosa do jeito que considerar bom para si."
+    },{
+        "pic": "kapish",
+        "tipo": "V",
+        "nome": "Jam session e atividades corporais",
+        "autor": "Kapish e Leena",
+        "link": "",
+        "desc": "O corpo, veículo da consciência, quando encontra a espontaneidade, vibra na pulsação da natureza. A música, refinada manifestação, amplia as possibilidades de acesso ao Ser que somos. É preciso se entregar. A música dança nossos corpos, como acontece com as crianças pequenas. O encontro com o êxtase é natural."
+    },{
+        "pic": "kranti",
+        "tipo": "O",
+        "nome": "Vivência de Astrologia e Astronomia",
+        "autor": "Kranti Pessoa",
+        "link": "",
+        "desc": "A Astronomia é uma ciência natural que estuda corpos celestes e fenômenos que se originam fora da atmosfera da Terra. Ela está preocupada com a evolução, a física, a química e o movimento de objetos celestes, bem como a formação e o desenvolvimento do universo."
+    }, {
+        "pic": "leal",
+        "tipo": "M",
+        "nome": "Apresentação musical",
+        "autor": "Leal Carvalho da Udiyana Bandha",
+        "link": "http://www.udiyanabandha.com/",
+        "desc": " Leal Carvalho é compositor, toca violão, tem o dom de canalizar e uma voz linda. Uma de suas melhores características é a de compor canções que refletem determinadas situações especiais quando ele é inspirado pela energia do amor. Suas letras têm um monte de visão, principalmente sobre o crescimento Espiritual & Eco-Consciência. Leal tem um muito balanço afro."
+    },{
+        "pic": "astro",
+        "tipo": "V",
+        "nome": "Vivência de Astrologia",
+        "autor": "Ricardo Mira",
+        "link": "www.ricardomira.com",
+        "desc": "Astrologia é ferramenta de auto-conhecimento, e mostra no espaço o movimento das energias. Toda esta ciência milenar pode ser entendida e usada em nosso dia á dia. As informações revelam mistérios naturais e abrem as portas dos conhecimentos superiores."
+    },{
+        "pic": "mosaico",
+        "tipo": "O",
+        "nome": "Oficina de Mosaico e Bioconstrução",
+        "autor": "Surydas Mendes",
+        "desc": "oficina prática de mosaico, aprenda fazendo, guiado pelo bioconstrutor Surydas Mendes."
+    },{
+        "pic": "baba",
+        "tipo": "O",
+        "nome": "Vivência de Práticas Indianas para uma Vida Saudável",
+        "autor": "Tapeshwar Priyo Baba",
+        "desc": ""
+    },{
+        "pic": "mirashow",
+        "tipo": "M",
+        "nome": "Apresentação musical",
+        "autor": "Ricardo Mira e Banda da Força",
+        "link": "http://www.ricardomira.com",
+        "desc": "Preparamos um show forte com as musicas consagradas para a família entrar na energia de transmutação e vibrar em catarse a Cura da Mãe Terra. No repertório, musicas do CD ¨Barco Violeta¨ e ¨Orgânico¨, e canções inéditas do Ritual pela ¨Cura do Planeta¨ e do ¨Sagrado Feminino¨.."
+    },{
+        "pic": "xoomei",
+        "tipo": "M",
+        "nome": "Apresentação musical",
+        "autor": "Duo Vário Xoomei e Messer",
+        "link": "https://www.facebook.com/babadejiboia?fref=ts",
+        "desc": "Produzir dentro da caracteristica etnica dos instrumentos algo inovador sem perder a simplicidade e o bom gosto, ritmos árabes, vibes aborigenes, cantos guturais, musica eletro-acústica"
+    },{
+        "pic": "caipira",
+        "tipo": "M",
+        "nome": "Apresentação musical",
+        "autor": "Dupla Caipira de Reggae",
+        "link": "http://www.duplacaipiradereggae.com",
+        "desc": "A Dupla é formada por Pedrishna, Céu Azul, Lua & Mathias, que compõe os arranjos de três vozes ao violão, charango, escaleta, percussão, entre outros instrumentos. Acreditando na força da União, muitos irmãos músicos chegam para somar, fazendo com que o trabalho possa ser desenvolvido em diversos formatos. "
+    },{
+        "pic": "ZecaMendes",
+        "tipo": "M",
+        "nome": "Apresentação musical",
+        "autor": "Zeca Mendes",
+        "link": "https://www.facebook.com/zeca.mendes.13",
+        "desc": "Zeca Mendes, músico, cantor, compositor e poeta. Com mais de 20 anos de carreira, com mais de 200 composições próprias, já Gravou 3 CDs. Atualmente estar preparando seu novo trabalho Cantares, também com musicas autoral. Já  participou do FICA em 2012 e 2013 e em outros eventos em várias cidades do Brasil, Peru e Bolívia, divulgando a nossa boa música e nossa cultura Brasileira."
+    },{
+        "pic": "danca",
+        "tipo": "O",
+        "nome": "Dançando o Sagrado feminino",
+        "autor": "Ambar Yanina",
+        "link": "https://www.facebook.com/bellydancetheaterworld",
+        "desc": "Elevaremos nossas preces para abençoar a mãe terra, a todas as expressões divinas dentro e fora de nós em uma dança envolvente pesquisamos o eu divino desde o ventre elevando nossa vibração para estar na mesma frequencia da nossa maezinha Sagrada terra, sagrado feminino, sagrado ventre, sagrado ser eterno."
+    },{
+        "pic": "vinicius",
+        "tipo": "O",
+        "nome": "Oficina de Expressão Corporal e Teatro Transcendental",
+        "autor": "Vinicius Giafferi",
+        "link": "https://www.facebook.com/vinicius.giafferi",
+        "desc": "Expressão Corporal, pelo nome já te dou elementos, como é a expressão oral do seu corpo, como seu corpo fala, como ele se expressa, e como reconhecemos isso, conscientizamos e trazemos para o nosso eu essa consciência, a expressão corporal é ampla e receptiva á muitos tipos de linguagens dentro dela que podem ser usadas como instrumentos para levar o indivíduo á seu auto conhecimento, desde improvisações teatrais, até meditação, desde o individual até o coletivo."
+    },{
+        "pic": "alika",
+        "tipo": "O",
+        "nome": "Renascimento da Alma: Arte da Perspectiva Positiva",
+        "autor": "Alika Finotti",
+        "desc": "A apresentação Renascimento da Alma: Arte da Perspectiva Positiva vem para compartilhar ferramentas psicológicas, emocionais e espirituais que interajam em nossa busca de sentido na Vida. Ao entender os aspectos biológicos, ancestrais, psicodélicos e científicos da estrutura do Ponto-de-vista, podemos interagir com nossas opiniões mais essenciais e começar a dirigir o núcleo da nossa Perspectiva Pessoal.",
+        "link": "alikafinotti.wix.com/alikafinotti"
+    },{
+        "pic": "acro",
+        "tipo": "O",
+        "nome": "Oficina de Iniciação a Acrobacias e Acroyoga",
+        "autor": "Marcella Seixas",
+        "link": "https://www.facebook.com/marcella.romar",
+        "desc": "Acro yoga é uma prática que integra a Yoga tradicional segundo Patanjali com elementos de Acrobacia e Massagem Thai. É uma prática dinâmica e divertida de se praticar Yoga que agrega interação com o outro, companheirismo e superação de desafios, assim como na acrobacia de solo em dupla com figura e muita dinâmica. O trabalho acrobático em grupo é transcender a referência do seu próprio corpo e integrar o outro em você como parte da sua própria estrutura."
+    },{
+        "pic": "estela",
+        "tipo": "O",
+        "nome": "O Prazer da Voz Saudável",
+        "autor": "Estela Rollieri",
+        "link": "https://www.facebook.com/estelaelba.rollieri",
+        "desc": "Conhecimento teórico e prático do aparelho fonador com benefícios imediatos indicados especialmente para quem faz uso freqüente o contínuo da voz tais como cantores, professores, palestrantes, teatro, etc. Estela Rollieri mais de 15 anos de experiência."
+    },{
+        "pic": "arvore",
+        "tipo": "V",
+        "nome": "Vivência da Árvore da Vida",
+        "autor": "Alex Xavier",
+        "link": "https://www.facebook.com/alex.xavier.771",
+        "desc": "Uma vivência holística e lúdica sobre o arquétipo da Árvore da vida. Imaginação, expressão corporal, desenho, dinâmicas de grupo. Um exercício que integra vários elementos, produzindo uma vivência ampla sobre o arquétipo da árvore."
+    },{
+        "pic":"alongamento",
+        "tipo":"V",
+        "nome":"Vivência de Alongamento Consciente",
+        "autor":"Alex Xavier",
+        "link":"https://www.facebook.com/betina.vizzinimoura?fref=ts",
+        "desc":"Uma vivência holística e lúdica sobre o arquétipo da Árvore da vida. Imaginação, expressão corporal, desenho, dinâmicas de grupo. Um exercício que integra vários elementos, produzindo uma vivência ampla sobre o arquétipo da árvore."
+    },{
+        "pic":"breyer",
+        "tipo":"O",
+        "nome":"Aprofundando no Sincronario Maia",
+        "autor":"João Breyer",
+        "link":"",
+        "desc":"Transimitir os ensinamentos do Sincronario da Paz, aprofundando a pratica da Yoga Syncrogalactica e introduzindo o Sincronotron e o Perceptor HolonMental. "
+    },{
+        "pic":"mae",
+        "tipo":"M",
+        "nome":"Apresentação musical",
+        "autor":"Mãe da Lua",
+        "link":"https://myspace.com/maedalua",
+        "desc":"Poeta, compositora, multi-instrumentista, considera a música uma grande ferramenta de unificação entre os seres. Nascida no Rio de Janeiro, criada em Brasília, viajou pelo Brasil e Europa. Nos últimos anos, vive entre Pernambuco e a Chapada dos Veadeiros (Goiás), viajando aonde a Arte a leva. Já ministrou aulas de percussão, incluindo a cultura afroindígena, em Marbella (Espanha). Possui uma capacidade admirável de tocar instrumentos: violas de 10 e 12 cordas, citarola, banjo, gaitas de fole e harmônica, flautas indígenas, persas, doce, dupla etc., com especial desempenho nos percussivos: alfaia, djambê, zabumba e o que mais vier."
+    },{
+        "pic":"conrado",
+        "tipo":"M",
+        "nome":"Apresentação musical",
+        "autor":"Conrado Pera",
+        "link":"https://soundcloud.com/conradopera",
+        "desc":"Me tornei músico, compositor e intérprete das minha canções, entre outras coisas que nomeamos e escrevemos em currículos. A convite de Miag Makibara e Diego Andrade criamos o espetáculo Viajarte, que mistura música, teatro, circo, dança, poesia e performance. Já tivemos o privilégio de nos apresentarmos em grandes festivais como a Virada Cultural Paulista, no FICA – Festival Internacional de Cinema Ambiental, no Encontro de Culturas da Chapada dos Veadeiros, entre muitos outros. Assinei a direção musical e compus música para filmes e documentários e minhas músicas foram tema de seriado e ganharam prêmios pelo país. EUA, Peru, México e Guatemala fazem parte dos países onde me apresentei, sempre executando minhas músicas."
+    },{
+        "pic":"waldorf",
+        "tipo":"O",
+        "nome":"Atividades Pedagógicas Waldorf",
+        "autor":"Ariadna Demarchi",
+        "link":"http://www.pedagogiawaldorf.com.br/",
+        "desc":"Essas atividades tem fundamentado na antroposofia, e mais especificamente na pedagogia Waldorf, tem como objetivo proporcionar às crianças o desabrochar harmonioso de todas as suas capacidades humanas no âmbito físico, emocional e espiritual. As atividades propostas vão trabalhar os doze sentidos humanos através de ricas vivências artísticas que integrem o ser criança holisticamente no mundo."
+    },{
+        "pic":"palhaco",
+        "tipo":"O",
+        "nome":"A arte do Palhaço",
+        "autor":"Danila Gonçalves",
+        "link":"https://www.facebook.com/ciapopulardeperformance",
+        "desc":"A proposta é a iniciação ou imersão no universo do palhaço, onde os participantes possam entrar em contato com seu potente estado de presença, ampliar a escuta, não temer o ridículo e aproveitar seu estado de graça, divertindo-se e compartilhando com o outro seus próprios sentimentos."
+    },{
+        "pic":"gusbenke",
+        "tipo":"M",
+        "nome":"Apresentação Musical",
+        "autor":"Gus Benke",
+        "link":"https://www.youtube.com/user/gusbenke",
+        "desc":"Gus Benke é músico, fotografo, místico e poeta. Conectado e enlaçador de mundos através da luz. Olha a vida com o coração da alma, unido, agregando, congregando, sincronizando. Místico, pois sua música é como natural presença de Deus. Poeta, pois celebra a presença de Deus. Conectado, pois pesquisa essa presença através da metodologia científica e espiritual."
+    },{
+        "pic":"joaoarruda",
+        "tipo":"M",
+        "nome":"Apresentação Musical",
+        "autor":"João Arruda",
+        "link":"http://www.joaoarrudavioleiro.wordpress.com",
+        "desc":" Cultura popular brasileira, com influências étnicas. Violas de cabaça, Talking drum e caixa do divino."
+    },{
+        "pic":"spiral",
+        "tipo":"O",
+        "nome":"Oficina de Dança Espiral Fractal",
+        "autor":"Renata Peixoto",
+        "link":"",
+        "desc":"A Dança Espiral Fractal ensina a trabalhar o potencial que todos temos, conscientemente transformar a energia ao redor, não nos deixando afetar com as formas de energia alheia, fornecendo positividade para o ambiente em que nos encontramos; ensina a interação e integração energética com os elementos da natureza, com o vento, a água, a terra e o sol; com o poder da mente e energia do seu eu espiritual."
+    },{
+        "pic":"pintura",
+        "tipo":"O",
+        "nome":"Oficina do Processo criativo de Pintura Corporal",
+        "autor":"Nina Benchimol",
+        "link":"",
+        "desc":"A pintura corporal é uma rica experiência para o olhar que observa e a pele que sente. Enquanto uma pessoa pinta a outra e deixa a sua imaginação voar, a pessoa pintada relaxa e sente o contato do pincel ativando seus sentidos. Pode-se afirmar que é como uma massagem, uma terapia. No final da atividade, é agradável ver o que cada um é capaz de criar no corpo do outro e todos se surpreendem com a transformação em seu próprio corpo."
+    },{
+        "pic":"dharma",
+        "tipo":"V",
+        "nome":"Vivêcia do Acampamento Dharmico",
+        "autor":"Sat Nam e Tapeshwar Priyo Bábá",
+        "link":"",
+        "desc":"Durante o FICA teremos Acampamento Dharmico, Um local para meditação, 5:00 hrs da manha e 6:30 hrs da tarde!!! Práticas de Jejuns, Silêncio, Palestras sobre Saúde Sútil e Histórias de Bábá..."
+    },{
+        "pic":"gypjazz",
+        "tipo":"M",
+        "nome":"Apresentação Musical",
+        "autor":"Manoucheria Gypsy Jazz",
+        "link":"",
+        "desc":"Sob grande influência da cultura nômade do leste europeu e inspirados pelo ritmo do Swing e Bebop, o grupo Manoucheria desenvolve estudos sobre o repertório do estilo jazz cigano ou jazz manouche, como é conhecido na Europa. Estilo que teve como precursor o músico belga Django Reinhardt, descendente de ciganos que reinventou a maneira de tocar jazz após a chegada de sua caravana aos arredores de Paris na década de 30. Buscando fidelidade musical ao estilo, todo o repertório é arranjado à instrumentação da época, proporcionando a experiência das cores musicais ciganas em conjunto à virtuosidade criativa e elegância do jazz.Especialmente  para a ocasião deste festival Manoucheria irá preparar o repertório em duo, ao banjo e violão."
+    },{
+        "pic":"horacriancas",
+        "tipo":"V",
+        "nome":"Hora das Crianças",
+        "autor":"Sandra Elizabeth",
+        "link":"",
+        "desc":"A hora das crianças e um tempo espaço para desfrutar da infância, lembrando-nos dos elementos da natureza e suas qualidades a traves de vivencias artísticas e recreativas. Na hora das crianças, vamos brincar com os elementos: água, calor-fogo, terra, ar e amor."
+    },{
+        "pic":"iris",
+        "tipo":"V",
+        "nome":"Vivência de Iridologia",
+        "autor":"Rodrigo de Paula",
+        "link":"http://olhosabertosiridologiaintegrada.wordpress.com/",
+        "desc":"O método Rayid é capaz de identificar os padrões de comunicação e relacionamentos segundo a constituição da estrutura da íris do olho. A personalidade compões-se de três partes: A mental, a emocional, e a física. E se expressa, por meios de comunicação auditivo visual e cinestésico. Todas pessoas possuem e utilizam os três e a íris revela quais são predominantes.Os padrões de íris são o Corrente, Flor, Jóia e agitador. Na oficina detalharei sobre eles e sobre a percepção da extroversão e da introversão na íris."
+    },{
+        "pic":"reiki",
+        "tipo":"V",
+        "nome":"Tenda da Cura de Reiki",
+        "autor":"Paola Pacheco e Lidiane",
+        "link":"",
+        "desc":"Terapia que utiliza a imposição de mãos para a canalização da Energia Universal, com o objetivo restabelecer o equilíbrio energético vital através dos chakras, contribuindo para a harmonização e potencializando os sistemas de cura do corpo."
+    },{
+        "pic":"resgate",
+        "tipo":"V",
+        "nome":"Ritual de Liberação de Ancestrais do Resgate da Índia",
+        "autor":"Ricardo Cury",
+        "link":"",
+        "desc":"Resgate da Índia será feito através de encontros gratuitos e rituais para a liberação dos nossos ancestrais em lugares específicos do Brasil, onde houveram as maiores atrocidades com estes povos que foram explorados e massacrados. Iremos unir o conhecimento e a sabedoria quem vem da Índia com a sabedoria que vem dos indígenas para resgatarmos esse Karma que existe no Brasil com relação aos povos indígenas, com os africanos e com a Mãe Terra."
+    },{
+        "pic":"desenho",
+        "tipo":"O",
+        "nome":"Oficina de Ampliação de Desenho Artístico",
+        "autor":"Com Flávio Multiman",
+        "link":"http://www.multiman.com.br/",
+        "desc":"Técnica de Desenho Artístico utilizando proporções e uma máscara quadriculada, onde qualquer “imagem/desenho”, pode ser redimensionado e ampliado com um resultado de detalhes praticamente perfeito em relação à imagem original."
+    },{
+        "pic":"batuque",
+        "tipo":"M",
+        "nome":"Apresentação Musical",
+        "autor":"As Batuqueiras",
+        "link":"",
+        "desc":" As Batuqueiras somam as suas pesquisas e vivências com a cultura popular e seus variados ritmos para homenagear e valorizar as nações de maracatu , os conquistas, as cirandeiras e dessa forma contribuir para sua manutenção."
+    }
+]

@@ -1,0 +1,5 @@
+//Rewrite to www
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^fica.flordeouro.net/formulario[nc]
+RewriteRule ^(.*)$ http://www.fica.flordeouro.net/formulario/$1 [r=301,nc]

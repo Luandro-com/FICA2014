@@ -1,0 +1,265 @@
+@media screen and (min-width:768px) {
+    html, body {
+    height: 100%;
+    width: 100%;
+    margin:auto;
+    background:none;
+    }
+    body {
+    }
+    h1 {
+        font-size:2em;
+
+    }
+    h2 {
+        font-size: 2em;
+    }
+    h3 {
+
+    }
+    h4 {
+        font-size: 2em;
+    }
+    .mobile {
+    display: none;
+    }
+    .wide {
+    display: block;
+    }
+    .curtina {
+    top:0;
+    }
+    video { display: block; }
+    #bgvideo {
+    position: fixed;
+    z-index: -1000;
+    overflow: hidden;
+    top: 0; 
+    left: 0; 
+    min-width: 100%; 
+    min-height: 100%; 
+    width: auto; 
+    height: auto;
+    }
+    .outter-nav {
+      background: none;
+      width: 100%;
+      height: 80px;
+      top:-10px;
+    }
+    nav {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.4);
+    font-size: 0.6em;
+    }
+    nav ul li {
+    display: inline-block;
+    text-align: left;
+    margin: 0 2%;
+    line-height: 80px;
+    }
+    nav ul li:hover {
+    color:black;
+    }
+    .small-nav {
+    color: black;
+    background: rgba(255,255,255,1);
+    }
+    .nav-inscreva {
+      padding: 14px 10px;
+      font-size: 1.2em;
+      top: 10px;
+    }
+
+    .show {
+    display: none;
+    }
+    .flor-big {
+    background: url('../img/FICA2014_icons.png') no-repeat -93px -12px;
+    width: 72px;
+    height: 71px;
+    text-align: left;
+    margin:auto;
+    float: left;
+    margin-top: 10px;
+    }
+    .logo img {
+        height: auto;
+        width: auto;
+    }
+    #log {
+    width: 70px;
+    margin:auto;
+    color: white;
+    line-height: 1px;
+    float: left;
+    font-weight: 100;
+    }
+
+    #log h1 {
+        font-size: 1.3em;
+    }
+    #log h2 {
+        margin-top: 35px;
+        font-size: 1.2em;
+        letter-spacing: 1px;
+    }
+    #poster {
+        margin-top: 14%;
+    }
+    .info-container {
+    width: 80%;
+    }
+    #programacao {
+    background: rgba(0,0,0,0.6);
+    }
+    .pro-cont {
+    margin: 10px 0.5%;
+    width: 24%;
+    height: 360px;
+    }
+    .apremus {
+    background: url('../img/FICA2014_prog.png') no-repeat -10px -6px;
+    width: 189px;
+    height: 117px;
+    line-height: 180px;
+    border-radius: 0;
+    padding: none;
+    font-size: 0.8em;
+    }
+    .ofivive {
+    background: url('../img/FICA2014_prog.png') no-repeat -221px -5px;
+    width: 189px;
+    height: 119px;
+    line-height: 180px;
+    border-radius: 0;
+    padding: none;
+    font-size: 0.8em;
+    }
+    .white-back {
+    padding-bottom: 450px;
+    }
+    #participe .container {
+    text-align: left;
+    }
+    #trazer .container {
+    font-size: 14px;
+    }
+    #chegar {
+      clear: both;
+    }
+    .contato {
+    width: 20%;
+    }
+}
+@media screen and (min-width:900px) {
+    .outter-nav {
+      background: none;
+      width: 100%;
+      height: 100px;
+      margin-top:-5px;
+    }
+    nav {
+        font-size: 0.8em;
+    }
+    .nav-inscreva {
+      padding: 15px 12px;
+      font-size: 2em;
+      top: 10px;
+    }
+    #log {
+    width: 200px;
+    margin:auto;
+    color: white;
+    line-height: 1px;
+    float: left;
+    font-weight: 100;
+    }
+
+    #log h1 {
+        font-size: 3.2em;
+    }
+    #log h2 {
+        margin-top: 40px;
+        font-size: 2.5em;
+        letter-spacing: 8px;
+    }
+    .small-nav{
+        height: 90px;
+        line-height: 90px;
+    }
+    .small-inscreva{
+        padding: 15px 12px;
+        font-size: 1.5em;
+    }
+    .small-nav-a{
+    color: rgba(0,0,0,0.6);
+    }
+}
+@media screen and (min-width:1080px) {
+    .outter-nav {
+      background: none;
+      width: 100%;
+      height: 140px;
+      margin-top:-5px;
+    }
+    nav {
+        font-size: 1em;
+        line-height: 140px;
+    }
+    .nav-inscreva {
+      padding: 25px 22px;
+      font-size: 2.5em;
+      top: 15px;
+    }
+    #log {
+    width: 200px;
+    margin:auto;
+    color: white;
+    line-height: 1px;
+    float: left;
+    font-weight: 100;
+    }
+
+    #log h1 {
+        font-size: 3.2em;
+    }
+    #log h2 {
+        margin-top: 50px;
+        font-size: 2.5em;
+        letter-spacing: 8px;
+    }
+    .small-nav{
+        height: 90px;
+        line-height: 90px;
+    }
+    .small-inscreva{
+        padding: 15px 12px;
+        font-size: 1.5em;
+    }
+    .small-nav-a{
+    color: rgba(0,0,0,0.6);
+    }
+    .areas-atuacao {
+    width: 80%;
+    }
+    #trazer .container {
+    width: 80%;
+    font-size: 14px;
+    }
+    .tsub {
+    width: 220px;
+    }
+    .tico {
+    margin-left: 53px;
+    }
+    #chegar {
+      clear: both;
+    }
+    .contato {
+    width: 20%;
+    }
+}

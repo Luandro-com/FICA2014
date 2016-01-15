@@ -1,0 +1,269 @@
+    <div class="animated fadeInDown">
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='http://fica.flordeouro.net/inscrito.html';}"></iframe>
+        <form   action="https://docs.google.com/forms/d/1N4cHkTcH2FDAOeNuIORk9X2eXssmlJ72lr604uupU0M/formResponse"
+                method="post"
+                name="userForm" 
+                ng-submit="submitForm(userForm.$valid)" 
+                target="hidden_iframe" 
+                onsubmit="submitted=true;">        
+
+            <h1 class="boxes">Formulário de contribuição financeira</h1>
+            <br/>
+            <div class="row">
+                <!-- NOME -->
+                <div class="form-group col-md-6" ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
+                    <label>Qual seu nome completo*</label>
+                    <input type="text" class="form-control" ng-model="user.name" ng-minlength="8" required name="entry.1009557782" >
+                     <span ng-show="userForm.name.$error.minlength" class="help-block">Digite seu nome completo.</span>
+                    <span ng-show="userForm.name.$invalid && !userForm.name.$pristine" class="help-block"> Essa informação é necessária para continuar.</span>
+                </div>
+            
+                <!-- EMAIL -->
+                <div class="form-group col-md-6" ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
+                    <label>Seu e-mail para contato*</label>
+                    <input type="email" class="form-control" ng-model="user.email" required name="entry.2125196830">
+                    <p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">Entre um email válido.</p>
+                </div>
+            </div>
+            <!-- DOCUMENTO -->
+            <div class="row">
+                <div class="form-group col-md-6">
+                        <label>RG ou CPF*</label>
+                        <input type="text" class="form-control" ng-model="user.documento" name="entry.653148729">
+                    </div>
+                 <!-- TELEFONE -->
+                    <div class="form-group col-md-6">
+                        <label>Telefone para contato*</label>
+                        <br/>
+                        <input type="text" class="form-control ddd" name="entry.1702411993" ng-model="user.ddd" maxlength="2" size="2">
+                        <input type="text" class="form-control tel" name="entry.1702411993" ng-model="user.telefone" maxlength="8">
+                </div>
+            </div>
+            <div class="row">      
+                <!-- LOCALIDADE -->
+                <div class="form-group col-md-6" ng-class="{ 'has-error' : userForm.cidade.$invalid && !userForm.cidade.$pristine }">
+                    <label>Cidade</label>
+                    <input type="text" class="form-control" ng-model="user.cidade" name="entry.206323791">
+                    <p ng-show="userForm.cidade.$invalid && !userForm.cidade.$pristine" class="help-block">Entre o nome da sua cidade.</p>
+                </div>
+                <div class="form-group col-md-6" ng-class="{ 'has-error' : userForm.estado.$invalid && !userForm.estado.$pristine }">
+                    <label>Estado</label>
+                    <select type="text" class="form-control" ng-model="user.estado" name="entry.221616294">
+                         <option value="">Selecione ...</option>
+                         <option value="AC">Acre</option>
+                         <option value="AL">Alagoas</option>
+                         <option value="AP">Amapá</option>
+                         <option value="AM">Amazonas</option>
+                         <option value="BA">Bahia</option>
+                         <option value="CE">Ceará</option>
+                         <option value="DF">Distrito Federal</option>
+                         <option value="GO">Goiás</option>
+                         <option value="ES">Espírito Santo</option>
+                         <option value="MA">Maranhão</option>
+                         <option value="MT">Mato Grosso</option>
+                         <option value="MS">Mato Grosso do Sul</option>
+                         <option value="MG">Minas Gerais</option>
+                         <option value="PA">Pará</option>
+                         <option value="PB">Paraiba</option>
+                         <option value="PR">Paraná</option>
+                         <option value="PE">Pernambuco</option>
+                         <option value="PI">Piauí­</option>
+                         <option value="RJ">Rio de Janeiro</option>
+                         <option value="RN">Rio Grande do Norte</option>
+                         <option value="RS">Rio Grande do Sul</option>
+                         <option value="RO">Rondônia</option>
+                         <option value="RR">Roraima</option>
+                         <option value="SP">São Paulo</option>
+                         <option value="SC">Santa Catarina</option>
+                         <option value="SE">Sergipe</option>
+                         <option value="TO">Tocantins</option>
+                    </select>
+                </div>
+            </div>    
+                <!-- PESSOAS A CIMA DE 12 -->
+            <h4 class="boxes">Número de pessoas e dias no festival?</h4>
+            <div class="row">    
+                <div class="form-group col-md-4" 
+                     ng-class="{ 'has-error' : userForm.nadultos.$invalid && !userForm.nadultos.$pristine }">
+                    <label>Número de pessoas com mais de 12 anos no seu grupo*</label>
+                    <select type="number" 
+                            class="form-control" 
+                            ng-model="user.nadultos" 
+                            ng-init="user.nadultos = adultos[0]" 
+                            ng-options="adulto for adulto in adultos" 
+                            ng-change="calculos(user, user.nadultos, user.ncriancas, user.dias, user.alimentacao, user.hospedagem, user.estacionamento, user.tipoalimentacao)"
+                            required 
+                            name="entry.936165973">
+                    </select>
+                    <div class='hide {{user.nadultos}}'>
+                        <label>Número de pessoas</label>
+                    <input type="text" ng-model="user.name" class="form-control">
+                </div>        
+                    <p ng-show="userForm.nadultos.$invalid && !userForm.nadultos.$pristine" class="help-block">Informe o número de pessoas que pretende inscrever</p>
+                </div>  
+                <!-- CRIANCAS COM 12 OU MENOS -->
+                <div class="form-group col-md-4" ng-class="{ 'has-error' : userForm.ncriancas.$invalid && !userForm.ncriancas.$pristine }">
+                    <label>Número de crianças de 5 a 12 anos no seu grupo*</label>
+                    <select type="number" 
+                            class="form-control" 
+                            ng-model="user.ncriancas" 
+                            ng-init="user.ncriancas = criancas[0]" 
+                            ng-options="crianca for crianca in criancas" 
+                            ng-change="calculos(user, user.nadultos, user.ncriancas, user.dias, user.alimentacao, user.hospedagem, user.estacionamento, user.tipoalimentacao)"
+                            name="entry.236962369">
+                    </select>    
+                    <sub ng-if="user.ncriancas != 0">Crianças até 5 anos contribuem com a presença, com o brilho, é gratuito, de 5 a 12 acertam meia.</sub>
+                </div>
+            <!-- NUMERO DE DIAS -->
+                <div class="form-group col-md-4" ng-class="{ 'has-error' : userForm.ncriancas.$invalid && !userForm.ncriancas.$pristine }">
+                    <label>Quantos dias pretende permanecer no festival*</label>
+                    <select type="number"
+                            class="form-control"
+                            ng-model="user.dias" 
+                            ng-init="user.dias = dias[0]" 
+                            ng-options="dia for dia in dias" 
+                            ng-change="calculos(user, user.nadultos, user.ncriancas, user.dias, user.alimentacao, user.hospedagem, user.estacionamento, user.tipoalimentacao)">
+
+                    <input type="hidden"
+                            value="{{user.dias}}" 
+                            name="entry.1000423392">
+                    </select>    
+                    <sub ng-if="user.dias === 5">A reserva poderá ser para metada do festival somente para os dias 30 de Julho a 03 de Agosto </sub>
+                </div>
+            </div>    
+            <h4  class="boxes">Gostaria de algum serviços extra?</h4>
+            <div class="row">       
+                <!-- ALIMENTACAO -->
+                <div class="form-group col-md-4" ng-class="{ 'has-error' : userForm.alimentacao.$invalid && !userForm.alimentacao.$pristine }">
+                    <label>Qual tipo de alimentação gostaria*</label>
+                    <select class="form-control" 
+                            ng-model="user.alimentacao" 
+                            ng-init="user.alimentacao = alimentacoes[0]" 
+                            ng-options="alimentacao for alimentacao in alimentacoes"
+                            ng-change="calculos(user, user.nadultos, user.ncriancas, user.dias, user.alimentacao, user.hospedagem, user.estacionamento, user.tipoalimentacao)">
+                    <input type="hidden" value="{{user.alimentacao}}" name="entry.69242049">
+                    </select>    
+                </div>    
+                <!-- HOSPEDAGEM -->
+                <div class="form-group col-md-4" ng-class="{ 'has-error' : userForm.ncriancas.$invalid && !userForm.ncriancas.$pristine }">
+                    <label>Qual tipo de hospedagem gostaria*</label>
+                    <select class="form-control" 
+                            ng-model="user.hospedagem" 
+                            ng-init="user.hospedagem = hospedagens[0]" 
+                            ng-options="hospedagem for hospedagem in hospedagens" 
+                            name="entry.2120836206"
+                            ng-change="calculos(user, user.nadultos, user.ncriancas, user.dias, user.alimentacao, user.hospedagem, user.estacionamento, user.tipoalimentacao)">
+
+                    <input type="hidden" value="{{user.hospedagem}}" name="entry.2120836206">
+                    </select>    
+                </div>
+                <!-- ESTACIONAMENTO -->
+                <div class="form-group col-md-4" ng-class="{ 'has-error' : userForm.ncriancas.$invalid && !userForm.ncriancas.$pristine }">
+                    <label>Quantas vagas gostaria no estacionamento</label>
+                    <select type="number" 
+                            class="form-control" 
+                            ng-model="user.estacionamento" 
+                            ng-init="user.estacionamento = carros[0]" 
+                            ng-options="carro for carro in carros" 
+                            name="entry.1470983336"
+                            ng-change="calculos(user, user.nadultos, user.ncriancas, user.dias, user.alimentacao, user.hospedagem, user.estacionamento, user.tipoalimentacao)">
+                    </select>    
+                </div>
+            </div>
+            
+            <div class="boxes"><h5>Segue a baixo o resumo das contribuições que pedimos para participação no evento</h5></div>
+            <br/>
+
+            <h5 class="total">O total de contribuição para <b>participação</b> no evento para {{user.nadultos}} adultos(s) e {{user.ncriancas}} criança(s) é de <b> {{totalEntrada | currency: 'R$'}} </b> para <b>{{user.dias}} dias de festival</b>.</h5>
+            <input type="hidden" value="{{totalEntrada | currency: 'R$'}}" name="entry.534162445">
+            <br/>
+
+            <h5 class="total">O total de contribuição para <b>alimentação</b> <span ng-if="user.alimentacao === 'Coletiva' "> na cozinha comunitária </span>no evento para {{user.nadultos}} adultos(s) e {{user.ncriancas}} criança(s) é de <b> {{totalAlimentacao | currency: 'R$'}} </b> para <b>{{user.dias}} dias de festival</b>.</h5>
+            <sup ng-if="user.alimentacao === 'Coletiva' ">Caso tenha como transportar, prefirimos que contribua com a cozinha diretamente com alimentos orgânicos e naturais no valor a cima. De que forma fará sua contribuição em alimentos?
+            <br/>
+            <select type="text" 
+                    name="entry." 
+                    ng-model="user.tipoalimentacao" 
+                    required
+                    ng-change="calculos(user, user.nadultos, user.ncriancas, user.dias, user.alimentacao, user.hospedagem, user.estacionamento, user.tipoalimentacao)"
+                    ng-init="user.tipoalimentacao = tipos[1]" 
+                    ng-options="tipo for tipo in tipos">
+                <input type="hidden" value="{{user.tipoalimentacao}}" name="entry.69242049">
+            </select>
+            </sup>
+            <input type="hidden" value="{{totalAlimentacao | currency: 'R$'}}" name="entry.1158298941">
+
+            <h5 class="total" ng-if="user.hospedagem === 'Chalés' ">O total de contribuição de <b>hospedagem</b> para {{user.nadultos+user.ncriancas}} pessoa(s) é de <b> {{totalHospedagem | currency: 'R$'}} </b> para <b>{{user.dias}} dias</b> de festival.</h5>
+            <input type="hidden" value="{{totalHospedagem | currency: 'R$'}}" name="entry_366717504"> 
+            <br/>
+            <h5 class="total" ng-if="user.estacionamento > 0 ">O total de <b>estacionamento</b> para {{user.estacionamento}} carro(s) é de <b> {{totalEstacionamento | currency: 'R$'}} </b> para {{user.dias}} dias de festival.</h5>
+            <input type="hidden" value="{{totalEstacionamento | currency: 'R$'}}" name="entry.2121141068"> 
+            <br/>
+
+            <div class="boxes" ng-if="user.tipoalimentacao === 'Dinheiro' "><h4>O total de contribuições para <b>{{user.dias}} dias </b> de festival e para cozinha comunitária é de <b>{{totalEntrada+totalAlimentacao+totalHospedagem+totalEstacionamento | currency: 'R$'}}</b>
+            <input type="hidden" value="{{totalEntrada+totalAlimentacao+totalHospedagem+totalEstacionamento | currency: 'R$'}}" name="entry.538102933"></h4></div>
+
+            <div class="boxes" ng-if="user.tipoalimentacao === 'Alimentos' "><h4>O total de contribuições para <b>{{user.dias}} dias </b> de festival é de <b>{{totalEntrada+totalHospedagem+totalEstacionamento | currency: 'R$'}}</b>
+            <input type="hidden" value="{{totalEntrada+totalHospedagem+totalEstacionamento | currency: 'R$'}}" name="entry.538102933"></h4></div>
+            <br/>
+
+            <h5>Sua vaga será confirmada mediante o pagamento dos valores a cima. Por favor escolha sua forma de pagamento.</h5>
+            <button class="btn btn-primary botoes" ng-click="bancodobrasil =! bancodobrasil">Transferência para Banco do Brasil</button>
+            <button class="btn btn-primary botoes" ng-click="PagSubmit(calculos(user, user.nadultos, user.ncriancas, user.dias, user.alimentacao, user.hospedagem, user.estacionamento, user.tipoalimentacao))">Pagamento com PagSeguro</button>
+            <br/>
+        
+            <div ng-if="bancodobrasil" class="animated fadeInDown">
+                <p>Por favor faça um depósito identificado, e envie um e-mail de confirmação de <b>{{user.email}}</b> para <a mail-to>confirma@flordeouro.net</a>, contendo o nome do titular da conta depositante, e quaisquer outras observações ou dúvidas referentes a inscrição.</p>
+                <h5>Conta para depósito identificado</h5>
+                <code>
+                <h4>Banco do Brasil</h4>
+                <h5>Titular: Surya S. Veneziani Mendes – Facilitador</h5>
+                <h5>Conta Corrente: 8608-8</h5>
+                <h5>Ag: 4546-2</h5>
+                <br/>
+                </code>
+                <sub>***Os <b>R${{((user.nadultos*23) + (user.ncriancas*11.5))*user.dias}},00</b> que dão acesso seram apenas para antes do evento, na portaria esse valor será de <b>R${{((user.nadultos*25) + (user.ncriancas*12.5))*user.dias}},00</b>.</sub>
+                <br/>
+            </div>     
+            <br/>
+            <br/>
+            <br/>
+            <div class="">
+                <label>Por favor informe o número de confirmação da transferência</label>
+                <br/>
+                <input type="text" required name="entry.1703164216" pattern=".{5,}"/>
+            </div>
+
+            <button type="submit" class="btn btn-primary" ng-disabled="(form.$submitted && form.$invalid)">Enviar</button>
+        </form>
+        <script type="text/ng-template" id="pagamento/Pagseguro.html">
+            <div class="pagueseguro">
+                <h1>Pagamento com PagSeguro</h1>
+                <br />
+                <br />
+                <p>Clicando no botão de pagamento a baixo, você será redirecionado para a página de pagamentos do pagseguro. Após concluir o pagamento, retorne a essa página e insira seu código de confirmação de pagamento e clique enviar o forumulário. Obrigado.</p>
+                <form method="post" target="pagseguro" action="https://pagseguro.uol.com.br/v2/checkout/payment.html">
+                    <div ng-repeat="item in carrinho">
+                        <input name="itemId{{$index+1}}" type="hidden" value="{{item.id}}">
+                        <input name="itemDescription{{$index+1}}" type="hidden" value="{{item.description}}">
+                        <input name="itemAmount{{$index+1}}" type="hidden" value="{{item.amount}}">
+                        <input name="itemQuantity{{$index+1}}" type="hidden" value="{{item.quantity}}">
+                    </div>            
+                    <input name="senderName" type="hidden" value="{{user.name}}">
+                    <input name="senderEmail" type="hidden" value="{{user.email}}">
+                    <input name="senderAreaCode" type="hidden" value="{{user.ddd}}">
+                    <input name="senderPhone" type="hidden" value="{{user.telefone}}">
+                    <input type="hidden" name="currency" value="BRL" />
+                    <input type="hidden" name="receiverEmail" value="suryamendes@hotmail.com" />
+                    <input type="hidden" name="encoding" value="UTF-8" />
+                    <input alt="Pague com PagSeguro" name="submit"  type="image" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/pagamentos/209x48-comprar-azul-assina.gif"/>
+
+                </form>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" ng-click="ok()">OK</button>
+                    <button class="btn btn-warning" ng-click="cancel()">Cancelar</button>
+                </div>
+            </div>
+         </script>   
+        </div>
+

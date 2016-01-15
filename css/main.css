@@ -1,0 +1,514 @@
+@font-face {
+  font-family: 'paint';
+  src: url('../font/Duty Cycle.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('../font/Duty Cycle.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+body {
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+    background: black;
+    background:url("../img/bg.jpg") no-repeat;
+    background-size: contain;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.min {
+    background: pink;
+}
+h1 {
+    font-size: 36px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 20px;
+}
+h4 {
+    font-size: 18px;
+}
+p {
+    font-size: 16px;
+}
+.wide {
+    display: none;
+}
+.world-container {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 5% 0;
+    text-align: center;
+}
+video { display: none; }
+.divider, .divider-p {
+    background: url("../img/FICA2014_divider.png") no-repeat;
+    background-size: contain;
+    position: relative;
+    top:-1px;
+    height: 120px;
+    width: 100%;
+    opacity: 0;
+}
+/* CURTINA */
+.curtina {
+      position: absolute;
+      top: -25%;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      background: #a6d900;
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a6d900), color-stop(100%, #ff4454));
+      background: -webkit-linear-gradient(top, #a6d900 0%, #ff4454 100%);
+      background: -webkit-gradient(linear, left top, left bottom, from(#a6d900), to(#ff4454));
+      background: linear-gradient(to bottom, #a6d900 0%, #ff4454 100%);
+      opacity: 0.5;
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6d900', endColorstr='#ff4454', GradientType=0);
+      -webkit-transition: opacity 1.5s;
+      transition: opacity 1.5s;
+      -webkit-animation: huerotator 3s infinite alternate;
+        }
+        @-webkit-keyframes huerotator {
+          0% {
+            -webkit-filter: hue-rotate(0deg);
+          }
+
+          100% {
+            -webkit-filter: hue-rotate(360deg);
+          }
+        }
+/* NAV */
+.outter-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: rgba(255,255,255,0.6);
+    z-index: 999;
+    color: white;
+}
+nav {
+    font-size: 1em;
+}
+nav ul {
+}
+nav ul li {
+}
+.nav-inscreva {
+    position: fixed;
+    top: 12px;
+    right: 10px;
+    padding: 15px 12px;
+    background: #1578ba;
+}
+.nav-inscreva:hover {
+    background: #4493c8;
+}
+.menu-icon {
+    position: absolute;
+    top:-20px;
+    z-index: 99999;
+}
+button {
+    background: none;
+    border: none;
+}
+.active {
+    border-bottom: 1px solid black;
+}
+/* HOME */
+#poster {
+    text-align: center;
+    z-index: 10;
+    margin: auto;
+    height: 100%;
+    margin-top: 40px;
+    margin-bottom: -14%;
+    font-family: 'lato', sans-serif;
+    letter-spacing: 3px;
+    padding-bottom: 0;
+}
+.logo {
+    font-size: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: auto;
+    height: auto;
+    width: 95%;
+}
+.logo img {
+    width: 80%;
+    height: auto;
+}
+.sublogo {
+    color: white;
+    font-size: 1.2em;
+    font-family: 'paint';
+
+}
+.data {
+    color: white;
+    padding-top: 10px;
+    font-weight: thin;
+}
+#logm {
+    color: white;
+    padding-top: 50px;
+}
+#logm h1 {
+    margin-top: -30px;
+    font-size: 3em;
+}
+#logm h2 {
+    font-size: 2em;
+    letter-spacing: 8px;
+}
+.social-icons {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.social-icons ul li {
+    display: inline-block;
+    margin-right: 15px;
+
+}
+.social-back {
+    height: 50px;
+    width: 50px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 25px;
+}
+.social-back:hover {
+    background: rgba(68, 147, 200, 0.6);
+}
+.face-ico {
+    background: url('../img/FICA2014_icons.png') no-repeat -17px -7px;
+    width: 16px;
+    height: 33px;
+    float: left;
+    margin: 7px 0 0 15px;
+}
+.insta-ico {
+    background: url('../img/FICA2014_icons.png') no-repeat -8px -52px;
+    width: 34px;
+    height: 33px;
+    float: left;
+    margin: 7px 0 0 8px;
+}
+.mais {
+    text-align: center;
+    width: 100%;
+    margin:auto;
+    display: inline-block;
+    margin-top: 5%;
+    transition: margin-top 0.5s ease;
+}
+.mais span {
+    margin: 0 5px;
+}
+.mais:hover {
+    margin-top: 5.5%;
+}
+.seta-baixo {
+    background: url('../img/FICA2014_icons.png') no-repeat -53px -56px;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: sub;
+}
+/* INFO */
+
+#info {
+    clear: both;
+    font-family: 'Lato',sans-serif;
+    background: url("../img/extra_clean_paper.png") repeat;
+    color: black;
+    width: 100%;
+    text-align: center;
+
+}
+ .info-container {
+    margin:auto;    
+    width: 100%;
+    padding: 2% 0;    
+    }
+ /* PROGRAMACAO */
+#programacao {
+    margin: auto;
+    background: #fff;
+    padding-top:30px;
+    padding-bottom: 80px;
+    text-align: left;
+}
+
+#programacao ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#programacao::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+.mostra {
+    background-color:#44c767;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:arial;
+    font-size:17px;
+    padding:5px 10px;
+    text-decoration:none;
+    text-shadow:1px 6px 12px #2f6627;
+}
+.mostra:hover {
+    background-color:#5cbf2a;
+}
+.mostra:active {
+    position:relative;
+    top:1px;
+}
+
+/*.mostra {
+    background: #77b133;
+    border-radius: 3px;
+    padding: 15px 20px;
+}*/
+
+.pro-cont {
+    background: url(../img/extra_clean_paper.png) repeat;
+    padding: 10px 5px;
+    margin-bottom: 20px;
+    text-align: left;
+    cursor: pointer;
+    height: 600px;
+}
+
+.pro-listras {
+    background: url(../img/FICA2014_Listras.png) no-repeat;
+    background-size: cover;
+    position: relative;
+    top: -127px;
+    left: -2%;
+    height: 117px;
+    width: 102%;
+    -webkit-transition: opacity .15s ease-in-out;
+    transition: opacity .15s ease-in-out;
+}
+
+.pro-vire {
+    opacity: 0;
+    display: none;
+    position: relative;
+    bottom: 30px;
+    color: #fff;
+}
+
+.pro-pic img {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+.pro-pic img:hover {
+    opacity: .7;
+}
+
+.pro-pic:hover~.pro-listras {
+    opacity: 0;
+}
+
+.pro-pic:hover~.pro-vire {
+    opacity: 1;
+    display: block;
+}
+
+.pro-container {
+    width: 90%;
+    margin: auto;
+}
+
+.pro-autor,.pro-titulo {
+    color: #fff;
+}
+
+.pro-desc {
+    height: 300px;
+}
+
+.pro-link {
+    color: red;
+}
+/* PARTICIPE */
+.white-back {
+    clear: both;
+    background: url("../img/extra_clean_paper.png") repeat;
+    margin: 0 auto;
+}
+#participe {
+    color: black;
+    background: url("../img/texturetastic_gray.png") repeat;
+    padding:0 0 100px 0;
+    border: grey solid 1px;
+}
+#participe::after {
+   content: " ";
+   display: table;
+   clear: both;
+}
+.participe-foto {
+    padding-top: 50px;
+}
+.participe-foto img {
+    height: 500px;
+    width: auto;
+}
+#participe .container {
+    text-align: center;
+    padding-bottom: 100px;
+    margin: 0 auto;
+}
+#participe button {
+    background: #1578ba;
+    color: white;
+    padding: 20px;
+    border-radius: 0 !important;
+    text-transform: uppercase;
+    font-family: 'lato',sans-serif;
+    border-radius: 10px;
+}
+#participe button:hover {
+    opacity: 0.8;
+}
+/* TRAZER */
+#trazer {
+    clear: both;
+    color: black;
+    background: url("../img/extra_clean_paper.png") repeat;
+    padding: 50px 0;
+    width: 100%;
+    margin: 0 auto;
+}
+#trazer::after {
+   content: " ";
+   display: table;
+   clear: both;
+}
+#trazer .container {
+    width: 95%;
+    font-size: 12px;
+    margin: 0 auto;
+}
+.tsub {
+    width: 150px;
+    text-align: center;
+}
+#trazer .col-sm-3 {
+    padding:30px 30px;
+}
+.tico {
+    margin-left: 25px;
+    width: 114px;
+    height: 114px;
+}
+.tico-roupa {
+    background: url('../img/icons_Trazer.png') no-repeat -10px -10px; 
+}
+.tico-higiene {
+    background: url('../img/icons_Trazer.png') no-repeat -208px -10px;
+}
+.tico-pratos {
+    background: url('../img/icons_Trazer.png') no-repeat -405px -10px;
+}
+.tico-musica {
+    background: url('../img/icons_Trazer.png') no-repeat -603px -10px;
+}
+.tico-camping {
+    background: url('../img/icons_Trazer.png') no-repeat -10px -132px;
+}
+.tico-lixo {
+    background: url('../img/icons_Trazer.png') no-repeat -208px -132px;
+}
+.tico-cigarro {
+    background: url('../img/icons_Trazer.png') no-repeat -405px -132px;
+}
+.tico-carne {
+    background: url('../img/icons_Trazer.png') no-repeat -603px -132px;
+}
+.insta-area {
+    width: 100%;
+    height: auto;
+    background: black;
+}
+#instafeed {
+    float: left;
+    margin: auto;
+}
+#instafeed img {
+    height: auto;
+    width: 33.333333%;
+}
+/* CHEGAR */
+#chegar {
+    background:white;
+    height: 550px;
+}
+#map {
+      display: block;
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+}
+.map-overlay{
+  display:block;
+  text-align:center;
+  color:white;
+  background: #1578ba;
+  font-size:1.2em;
+  line-height:50px;
+  padding:0 30px;
+  border-radius: 5px;
+  height: 300px;
+  margin-top: 100px;
+}
+.overlay-arrow {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 40px 40px 0 40px;
+    border-color: #1578ba transparent transparent transparent;
+    position: relative;
+    margin: auto;
+    bottom: -18px;
+
+}
+footer {
+    clear:both;
+    margin: auto;
+    background: rgba(0,0,0,0.8);
+    color: white;
+    font-size: 10px;
+    text-align: center;
+}
+footer a {
+    color:#77b133; 
+}

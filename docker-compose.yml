@@ -1,7 +1,7 @@
 version: '2'
 services:
   web:
-    image: php@latest
+    image: php:latest
     volumes:
       - ./app:/var/www/html
     environment:

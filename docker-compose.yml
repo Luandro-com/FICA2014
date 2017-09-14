@@ -1,0 +1,11 @@
+version: '2'
+services:
+  web:
+    image: php@latest
+    volumes:
+      - ./app:/var/www/html
+    environment:
+      VIRTUAL_HOST: fica.luandro.com
+      LETSENCRYPT_HOST: fica.luandro.com
+      LETSENCRYPT_EMAIL: luandro@gmail.com
+    # command: wget --no-check-certificate -O master.zip $GIT_URL

@@ -17,7 +17,7 @@ var gulp = require('gulp'),
 
 //Node server
 var EXPRESS_PORT = 3000;
-var EXPRESS_ROOT = './release';
+var EXPRESS_ROOT = './app';
 var LIVERELOAD_PORT = 35730;
 function startExpress() {
   var express = require('express');
@@ -40,7 +40,7 @@ function notifyLivereload(event) {
 gulp.task('html', function() {
   gulp.src('./*.html')
     .pipe(htmlmin({collapseWhitespace: true, removeComments: true, removeCommentsFromCDATA: true, removeAttributeQuotes: true}))
-    .pipe(gulp.dest('release/'))
+    .pipe(gulp.dest('app/'))
     .pipe(notify({ message: 'HTML task complete' }));
 });
 
@@ -59,7 +59,7 @@ gulp.task('styles', function() {
     .pipe(gulp.dest('css/build'))
     .pipe(rename({suffix: '.min'}))
     .pipe(minifycss())
-    .pipe(gulp.dest('release/css'))
+    .pipe(gulp.dest('app/css'))
     .pipe(notify({ message: 'Styles task complete' }));
 });
 
@@ -77,23 +77,23 @@ gulp.task('scripts', function() {
     .pipe(gulp.dest('js/build'))
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
-    .pipe(gulp.dest('release/js'))
+    .pipe(gulp.dest('app/js'))
     .pipe(notify({ message: 'Scripts task complete' }));
 });
 gulp.task('json', function () {
   return gulp.src('js/programacao.json')
-    .pipe(gulp.dest('release/js'))
+    .pipe(gulp.dest('app/js'))
     .pipe(notify({ message: 'Json task complete'}));
 });
 gulp.task('images', function() {
   return gulp.src('img/**/*')
     .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
-    .pipe(gulp.dest('release/img'))
+    .pipe(gulp.dest('app/img'))
     .pipe(notify({ message: 'Images task complete' }));
 });
 
 gulp.task('clean', function() {
-  return gulp.src(['release/css', 'release/js', 'release/img', 'release/html' ], {read: false})
+  return gulp.src(['app/css', 'app/js', 'app/img', 'app/html' ], {read: false})
     .pipe(clean());
 });
 

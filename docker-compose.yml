@@ -1,7 +1,7 @@
-version: '2'
+version: '3'
 services:
   web:
-    image: php:latest
+    image: php:alpine
     volumes:
       - ./app:/var/www/html
     environment:
